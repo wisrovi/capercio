@@ -76,3 +76,5 @@ sudo cp config/capercioWallpaper.jpg /usr/share/rpd-wallpaper/capercioWallPaper.
 echo quitando el icono en el arranque de dispositivo
 sudo cp /home/pi/capercio/config/cmdline.txt /boot/cmdline.txt
 
+
+python3 check.py
