@@ -62,7 +62,7 @@ try:
         contadorNoEncontrados = contadorNoEncontrados + 1
         print("falta un archivo de ejecucion (indexM), por favor vuelva a descargar el repositorio de github")
     
-    if os.path.exists("indeCV.py"):
+    if os.path.exists("indexCV.py"):
         print(".")
     else:
         contadorNoEncontrados = contadorNoEncontrados + 1
