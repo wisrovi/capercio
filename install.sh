@@ -47,7 +47,7 @@ sudo apt-get install -y libhdf5-serial-dev
 
 sleep 5
 
-sudo apt install libqtgui4
+sudo apt install -y libqtgui4
 
 sleep 5
 
