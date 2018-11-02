@@ -45,6 +45,12 @@ sudo apt-get install -y python3 python3-dev python3-pip
 sudo apt-get install -y libhdf5-dev
 sudo apt-get install -y libhdf5-serial-dev
 
+sleep 5
+
+sudo apt install libqtgui4
+
+sleep 5
+
 pip3 install opencv-python
 pip3 install opencv-contrib-python
 pip3 install request
