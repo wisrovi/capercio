@@ -8,28 +8,7 @@ try:
 except ImportError:
     contadorNoEncontrados = contadorNoEncontrados + 1
     print("falta un archivo de ejecucion (properties), por favor vuelva a descargar el repositorio de github")  
-    
-contadorTotalArchivos = contadorTotalArchivos + 1
-try:                                                                      
-    from indexM import *                                                
-except ImportError:
-    contadorNoEncontrados = contadorNoEncontrados + 1
-    print("falta un archivo de ejecucion (indexM), por favor vuelva a descargar el repositorio de github")  
-    
-contadorTotalArchivos = contadorTotalArchivos + 1
-try:                                                                      
-    from indexCV import *                                                
-except ImportError:
-    contadorNoEncontrados = contadorNoEncontrados + 1
-    print("falta un archivo de ejecucion (indexCV), por favor vuelva a descargar el repositorio de github")
-    
-contadorTotalArchivos = contadorTotalArchivos + 1
-try:                                                                      
-    from index import *                                                
-except ImportError:
-    contadorNoEncontrados = contadorNoEncontrados + 1
-    print("falta un archivo de ejecucion (index.py), por favor vuelva a descargar el repositorio de github")
-    
+           
 contadorTotalArchivos = contadorTotalArchivos + 1
 try:                                                                      
     from descargarImagen import *                                                
@@ -70,6 +49,24 @@ try:
     else:
         contadorNoEncontrados = contadorNoEncontrados + 1
         print("falta un archivo de ejecucion (haarcascade), por favor vuelva a descargar el repositorio de github")
+        
+    if os.path.exists("index.py"):
+        print(".")
+    else:
+        contadorNoEncontrados = contadorNoEncontrados + 1
+        print("falta un archivo de ejecucion (index), por favor vuelva a descargar el repositorio de github")
+    
+    if os.path.exists("indexM.py"):
+        print(".")
+    else:
+        contadorNoEncontrados = contadorNoEncontrados + 1
+        print("falta un archivo de ejecucion (indexM), por favor vuelva a descargar el repositorio de github")
+    
+    if os.path.exists("indeCV.py"):
+        print(".")
+    else:
+        contadorNoEncontrados = contadorNoEncontrados + 1
+        print("falta un archivo de ejecucion (indexCV), por favor vuelva a descargar el repositorio de github")
         
 except ImportError:
     contadorNoInstalados = contadorNoInstalados + 1#
