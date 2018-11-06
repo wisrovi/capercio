@@ -7,7 +7,7 @@ def procesoReconocimiento():
     proceso = 0
     persona = ""
     for x in range(propiedades.numberSendPhotosToIA):
-        ruta, hayRostro = buscarRostro(True)
+        ruta, hayRostro = buscarRostro(False)
         if hayRostro == True :
             respuestaPost = enviarImagenPost(urlDestino = "https://paul.fcv.org:8443/capercio/Servlet", rutaImagen = ruta)
             if respuestaPost == "0":
