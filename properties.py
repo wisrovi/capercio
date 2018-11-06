@@ -6,6 +6,6 @@ class properties:
     anchoVentana = "800" #800
     altoVentana = "480"  #480
     colorFondo = "#F3F3F3"
-    activarFullScreen = False
+    activarFullScreen = True
     imagenFondo = "Captura.ppm"
     numberSendPhotosToIA = 10
