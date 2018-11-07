@@ -114,7 +114,7 @@ raiz = Tk()#inicializo la raiz
 app = MyApp(raiz)
 raiz.title("Capercio")
 raiz.resizable(False,False)
-raiz.geometry("800" + "x" + "480") #ancho x alto
+raiz.geometry("600" + "x" + "480") #ancho x alto
 raiz.attributes('-fullscreen', True) #maximizar ventana
 centrarVentana(raiz)
 
