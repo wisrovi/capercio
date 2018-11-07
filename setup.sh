@@ -31,8 +31,11 @@ sleep 5
 echo configurando el funcionamiento de la pantalla y el modo ahorro de energía
 sudo cp /home/pi/capercio/config/lightdm.conf /etc/lightdm/lightdm.conf
 
+touch 3.bin
+
 sleep 5
 
-echo Configuracion terminada, reiniciando el dispositivo.
+echo Configuracion terminada.
 
-sudo reboot
+sudo python3 check.py
+
