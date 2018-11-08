@@ -1,8 +1,4 @@
-
-fileDesinstalacion = "1.bin"
-fileInstalacion = "2.bin"
-fileConfiguracion = "3.bin"
-
+#! /usr/bin/env python3
 from tkinter import *
 import time
 import os
@@ -10,6 +6,10 @@ import os.path as path
 from tkinter.ttk import Progressbar
 from tkinter import ttk
 from threading import Thread
+
+fileDesinstalacion = "1.bin"
+fileInstalacion = "2.bin"
+fileConfiguracion = "3.bin"
 
 class util:                                                                                                   #
     def __init__(self, parent):                                                                               #
@@ -21,7 +21,7 @@ class util:                                                                     
         self.top.geometry("650" + "x" + "50")                                                                 #
         Message(self.top, text=texto, padx=20, pady=20, font=("Helvetica", 16), width=600).pack()             #
         centrarVentana(self.top)                                                                              #
-        self.top.after(3000, self.top.destroy)                                                                #
+        #self.top.after(3000, self.top.destroy)                                                                #
                                                                                                               #
     def progressbarAutoDestroid(self, texto="Probando...", tiempo=10000):                                     #
         self.topProgressbar = Toplevel()                                                                      #
