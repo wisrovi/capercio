@@ -18,10 +18,10 @@ class util:                                                                     
     def mensajeAutoDestroid(self, texto="Probando..."):                                                       #
         self.top = Toplevel()                                                                                 #
         self.top.title('Capercio')                                                                            #
-        self.top.geometry("650" + "x" + "50")                                                                 #
+        self.top.geometry("800" + "x" + "480")                                                                 #
         Message(self.top, text=texto, padx=20, pady=20, font=("Helvetica", 16), width=600).pack()             #
         centrarVentana(self.top)                                                                              #
-        #self.top.after(3000, self.top.destroy)                                                                #
+        self.top.after(30000, self.top.destroy)                                                                #
                                                                                                               #
     def progressbarAutoDestroid(self, texto="Probando...", tiempo=10000):                                     #
         self.topProgressbar = Toplevel()                                                                      #
@@ -103,18 +103,18 @@ def procesarInstalacion():
 
 
 def iniciarInstalador():
-    os.system("sudo sh execute.sh ")
+    os.system("sudo sh /home/pi/capercio/execute.sh ")
 
 def instalar():    
     Thread(target=iniciarInstalador).start()
-    utilidades.progressbarAutoDestroid("Cargando...", 1800000)
+    utilidades.progressbarAutoDestroid("Cargando...", 2400000)
     Thread(target=procesarInstalacion).start()
 
 raiz = Tk()#inicializo la raiz
 app = MyApp(raiz)
 raiz.title("Capercio")
 raiz.resizable(False,False)
-raiz.geometry("600" + "x" + "480") #ancho x alto
+raiz.geometry("800" + "x" + "480") #ancho x alto
 raiz.attributes('-fullscreen', True) #maximizar ventana
 centrarVentana(raiz)
 

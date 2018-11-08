@@ -64,4 +64,4 @@ pip3 install numpy
 
 sleep 5
 
-sudo sh setup.sh
+sudo sh /home/pi/capercio/setup.sh

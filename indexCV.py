@@ -73,10 +73,10 @@ class util:                                                                     
     def mensajeAutoDestroid(self, texto="Probando..."):                                                       #
         self.top = Toplevel()                                                                                 #
         self.top.title('Capercio')                                                                            #
-        self.top.geometry("650" + "x" + "50")                                                                 #
+        self.top.geometry("650" + "x" + "70")                                                                 #
         Message(self.top, text=texto, padx=20, pady=20, font=("Helvetica", 16), width=600).pack()             #
         centrarVentana(self.top)                                                                              #
-        self.top.after(3000, self.top.destroy)                                                                #
+        self.top.after(6000, self.top.destroy)                                                                #
                                                                                                               #
     def progressbarAutoDestroid(self, texto="Probando...", tiempo=10000):                                     #
         self.topProgressbar = Toplevel()                                                                      #
