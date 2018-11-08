@@ -105,7 +105,9 @@ def procesarInstalacion():
 def iniciarInstalador():
     os.system("sudo sh /home/pi/capercio/execute.sh ")
 
-def instalar():    
+def instalar():
+    button1.config(state="disabled")
+    button2.config(state="disabled")
     Thread(target=iniciarInstalador).start()
     utilidades.progressbarAutoDestroid("Cargando...", 2400000)
     Thread(target=procesarInstalacion).start()
