@@ -1,3 +1,5 @@
+touch 0.bin
+
 sudo apt  --purge remove -y scratch*
 sudo apt  --purge remove -y minecraft-pi
 sudo apt-get --purge remove -y geany
